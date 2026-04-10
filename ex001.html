@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício001</title>
+</head>
+<body>
+    <form id="form">
+    <input id="pais" type="text" placeholder="Diga teu país">
+    <button type="submit">Enviar</button>
+    </form>
+    <div id="msg"></div>
+    <script>
+        var form = document.getElementById("form")
+        form.addEventListener("submit", function(event){
+            event.preventDefault()
+            verify()
+        } )
+        function verify(){
+            var msg = document.getElementById('msg')
+           if(form.pais.value == "moz"){
+                msg.innerHTML += "<p>MOÇAMBICANO</p>"
+            }else{
+                msg.innerHTML += "<p>ESTRAGEIO</p>"
+            }
+        }
+    </script>
+</body>
+</html>

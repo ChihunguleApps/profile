@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbeiro</title>
+    <style>
+        body{
+            background: linear-gradient(135deg, hsl(0, 0%, 0%) 0%,#030c29 60%, #092b6b 100%);
+            min-height: 100vh;
+        }
+        img{
+            height: 350px;
+            width: 350px;
+            margin: 20px;
+            border-radius: 30px;
+            object-fit: cover;
+            
+        }
+        .all{
+            display: flex;
+             flex-direction: row;
+             color: white;
+             justify-content: start;
+        } 
+         
+        .container-info{
+             display: flex;
+             flex-direction: column;
+        }
+        div.info{
+             flex-direction: row;
+             color: white;
+             margin-right: 30px;
+             letter-spacing: 1px;
+             font-size: 12pt;
+        }
+        .tag{
+            margin-top: 10px;
+            color: #ffc506; 
+        }
+        div.pg{
+            display: flex;
+        }
+
+        h1{
+            color: #ffc506;
+            margin-left: 20px;
+
+        }
+        p{
+            margin: 2px 0;
+            line-height: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        
+        <img src="img.jpg">
+        <div class="container-info">
+            <h1>O Barbeiro</h1>
+
+            <div class="pg">
+                <div class="info">
+                    <p class="tag">NOME COMPLETO</p>
+                    <p>SÉRGIO JONAS CHIHUNGULE </p>
+                    <p></p>
+                    <p class="tag">NATURALDADE</p>
+                    <p>MAPUTO</p>
+                    <p class="tag">INÍCIO DE CARREIRA</p>
+                    <p>2020</p>
+                    <p class="tag">PROVINCIA</p>
+                    <p>MAPUTO (Cidade)</p>
+                </div>
+                <div class="info">
+                     <p class="tag">IDADE</p>
+                     <p>23</p>
+                     <p class="tag">SEXO</p>
+                     <p>MASCULINO</p>
+                     <p  class="tag">DATA da publicação</p>
+                     <p id="ago">18:48</p>
+                     <p class="tag">CONTACTOS</p>
+                     <P>Call: 849470151 / 850104153 </P>
+                       <p>Email: chihungulesergiojonas@gmail.com</p>
+
+                 </div>
+            </div>
+        </div>
+        
+    </div>
+    <script> 
+     
+     function  getTime() {
+        var hr = new Date(2026, 3, 10, 20, 0)
+        var ag = new Date()
+        var ago = ag - hr
+        
+        var mins = Math.floor(ago/60000)
+        var hours = Math.floor(mins/60)
+        var days = Math.floor(hours/24)
+        var weeks = Math.floor(days/7)
+        var months = Math.floor(days/30)
+        var years = Math.floor(days/365)
+
+        if(mins<60) return mins + (mins===1?" minuto":" minutos")
+        if(hours<24) return hours +(hours===1? " hora": " horas")
+        if(days<7) return days + (days===1?" dia":" dias")
+        if(days<30) return weeks + (weeks===1?" semana":" semanas")
+        if(months<12) return months + (months===1?" mês":" meses")
+        return years + (years===1?" ano":" anos" )
+     }
+
+
+     document.getElementById("ago").innerText = ` Publicado há ${getTime()} atrás`
+    </script>
+</body>
+</html>
