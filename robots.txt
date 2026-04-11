@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
- #vj 
 Sitemap: https://sergiojonas.github.io/sitemap.xml
  
