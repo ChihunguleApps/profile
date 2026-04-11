@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chihunguleapps.github.io/profile/sitemap.xml
+Sitemap: https://chihunguleapps.github.io/sitemap.xml
