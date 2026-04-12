@@ -22,124 +22,42 @@
         }
     </script>
     <title>Sérgio Jonas Chihungule | O barbeiro</title>
-    <style>
-        body{
-            background: linear-gradient(135deg, hsl(0, 0%, 0%) 0%,#030c29 60%, #092b6b 100%);
-            min-height: 100vh;
-        }
-        a{
-            color: #06ccc2;
-        }
-        img{
-            width: 50vw;
-            height: 35vw;
-            margin: 25px;
-            border-radius: 30px;
-            object-fit: cover;
-            
-        }
-        .all{
-            display: flex;
-             flex-direction: row;
-             color: white;
-             justify-content: start;
-        } 
-         
-        .container-info{
-             display: flex;
-             flex-direction: column;
-        }
-        div.info{
-             flex-direction: row;
-             color: white;
-             margin-right: 30px;
-             letter-spacing: 1px;
-             font-size: 1.5vw;
-        }
-        .tag{
-            margin-top: 10px;
-            color: #ffc506; 
-        }
-        div.pg{
-            display: flex;
-        }
 
-        h1{
-            color: #ffc506;
-            margin-left: 20px;
-            font-size: 5vw;
-
-        }
-        p{
-            margin: 2px 0;
-            line-height: normal;
-        }
-
-        @media (max-width: 768px) {
-            .all {
-                flex-direction: column;
-        
-            }
-            h1{
-                align-self: center;
-                font-size: 6vW;
-            }
-            div.pg{
-                flex-direction: row;
-                align-items: center;
-                
-            }
-
-            div.info{
-                font-size: 2.5vw;
-                flex-direction: row;
-                margin-right: 20px;
-                margin-bottom: 20px;
-            }
-            
-            img {
-                align-self: center;
-                width: 40%;
-                aspect-ratio: 1/1;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="all">
-        
+
+    <header>
+        <h1>O Barbeiro</h1>
+    </header>
+    <section>
         <img src="img.PNG">
-        <div class="container-info">
-            <h1>O Barbeiro</h1>
 
-            <div class="pg">
-                <div class="info">
-                    <p class="tag">NOME COMPLETO</p>
-                    <p>SÉRGIO JONAS CHIHUNGULE </p>
-                    <p></p>
-                    <p class="tag">NATURALDADE</p>
-                    <p>MAPUTO</p>
-                    <p class="tag">INÍCIO DE CARREIRA</p>
-                    <p>2020</p>
-                    <p class="tag">PROVINCIA</p>
-                    <p>MAPUTO (Cidade)</p>
-                </div>
-                <div class="info">
-                     <p class="tag">IDADE</p>
-                     <p>23</p>
-                     <p class="tag">SEXO</p>
-                     <p>MASCULINO</p>
-                     <p  class="tag">Data de publicação</p>
-                     <p id="ago"></p>
-                     <p class="tag">CONTACTOS</p>
-                     <P>Call: 849470151 / 850104153 </P>
-                     <p>Email: <a href="mailto:chihungulesergiojonas@gmail.com">chihungulesergiojonas@gmail.com</a></p>
-
-                 </div>
-            </div>
-        </div>
+         <div >
+            <p class="tag">NOME COMPLETO</p>
+            <p>SÉRGIO JONAS CHIHUNGULE </p>
+            <p class="tag">NATURALDADE</p>
+            <p>MAPUTO</p>
+            <p class="tag">INÍCIO DE CARREIRA</p>
+            <p>2020</p>
+            <p class="tag">PROVINCIA</p>
+            <p>MAPUTO (Cidade)</p>
+            
+            <p class="tag">IDADE</p>
+            <p>23</p>
+            <p class="tag">SEXO</p>
+            <p>MASCULINO</p>
+            <p  class="tag">Data de publicação</p>
+            <p id="ago"></p>
+            <p class="tag">CONTACTOS</p>
+            <P>Call: 849470151 / 850104153 </P>
+            <p>Email: <a href="mailto:chihungulesergiojonas@gmail.com">chihungulesergiojonas@gmail.com</a></p>
         
-    </div>
+         </div>
+    </section>
+    <footer>
+        <p>&copy; SergioJonas &reg;</p>
+    </footer>
     <script> 
      
      function  getTime() {
