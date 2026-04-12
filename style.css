@@ -18,7 +18,6 @@ section{
    line-height: 1.4vw;
    margin: 20px auto;
    width: 95vw;
-   overflow: hidden;
 }
 img{
     float: left;
@@ -27,15 +26,12 @@ img{
     margin-right: 2vw;
     border-radius: 2vw;
     object-fit: cover;     
-    flex-shrink: 0;    
 }
 div{
     display: flex;
     height: 35vw;
     flex-direction: column;
     flex: 1;
-    justify-content: flex-start;
-    overflow-y:  auto;
 }
 p{
     margin: 0;
