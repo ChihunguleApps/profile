@@ -7,29 +7,29 @@ body{
 header{
     text-align: center;
     color: #ffc506;
-    font-size: 2vw;
+    font-size: 1.6vw;
 }
 section{
     display: flex;
     flex-direction: row;
    align-items: flex-start;
    color: white;
-   font-size: 1.3vw;
-   line-height: 1.4vw;
+   font-size: 1.2vw;
+   line-height: 1.25vw;
    margin: 20px auto;
    width: 95vw;
 }
 img{
     float: left;
     width: 50vw;
-    height: 35vw;
+    height: 30vw;
     margin-right: 2vw;
     border-radius: 2vw;
     object-fit: cover;     
 }
 div{
     display: flex;
-    height: 35vw;
+    height: 30vw;
     flex-direction: column;
     flex: 1;
 }
@@ -46,9 +46,9 @@ a{
 footer{
    color: #64aafa;
    text-align: center;
-   margin-top: 50px;
-   margin-bottom: 30px;
-   font-size: 2vw;
+   margin-top: 2vh;
+   margin-bottom: 1vh;
+   font-size: 1.4vw;
 }
 
 
@@ -57,6 +57,9 @@ footer{
         margin: auto;
         width: 100%;
     }
+    header{
+        font-size: 2vh;
+    }
 
     section{
         flex-direction: column;
@@ -64,27 +67,27 @@ footer{
         align-items: center;
         width: 90%;
         margin: 0 auto;
-        font-size: 3.5vw;
-        line-height: 3.55vw;
+        font-size: 1.7vh;
+        line-height: 1.7vh;
     }
     .tag{
         margin-top: 1.5vh;
     }
     div{
-        margin-top: 3vw;
+        margin-top: 3vh;
     }
     img{
         width: 60vw;
-        height: 50vw;
+        height: 30vh;
         text-align: center;
         float: none;
-        border-radius: 4vh;
+        border-radius: 3vh;
     }
     footer{
    text-align: center;
-   margin-top: 5vh;
-   margin-bottom: 3vh;
-   font-size: 5vw;
+   margin-top: 2vh;
+   margin-bottom: 1vh;
+   font-size: 1.5vh;
 }
     
 }
