@@ -6,39 +6,42 @@ body{
 
 header{
     text-align: center;
+    color: #ffc506;
+    font-size: 2vw;
 }
 section{
     display: flex;
-    height: auto;
+    flex-direction: row;
    align-items: flex-start;
    color: white;
-   font-size: 1.5vw;
-   line-height: 1.7vw;
+   font-size: 1.3vw;
+   line-height: 1.4vw;
+   margin: 20px auto;
+   width: 95vw;
+   overflow: hidden;
 }
 img{
     float: left;
     width: 50vw;
-    height: 40vw;
+    height: 35vw;
     margin-right: 2vw;
     border-radius: 2vw;
-    object-fit: cover;         
+    object-fit: cover;     
+    flex-shrink: 0;    
 }
 div{
     display: flex;
+    height: 35vw;
     flex-direction: column;
     flex: 1;
+    justify-content: flex-start;
+    overflow-y:  auto;
 }
 p{
     margin: 0;
 }
- h1{
-    color: #ffc506;
-    margin-left: 20px;
-    font-size: 5vw;
-
-}
 .tag{
-    margin-top: 1.3vw;
+    margin-top: 1.1vw;
     color: #ffc506; 
 }
 a{
